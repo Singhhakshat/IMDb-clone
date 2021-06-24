@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+@media only screen and (min-width:608px){
+    #mag_glass{
+        display: none;
+    }
+    #search{
+        display: inline !important;
+    }
+    nav{
+        justify-content: space-around;
+    }
+}
+@media only screen and (min-width:1024px){
+    .px1024{
+        display: inline !important;
+        min-width: 200px;
+        padding: 10px;
+        padding-left: 20px;
+    }
+    nav{
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+    .menu_icon{
+        order: 1 !important;
+    }
+    #span{
+        order: 0;
+    }
+    #search{
+        order:3;
+    }
+    #menu-text{
+        color: white;
+        display: inline !important;
+        order: 2;
+        font-weight: 700;
+    }
+}
+
+                                                    /* Styline nav bar */
+
+nav{
+    background-color: rgb(31 31 31);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+}
+.menu_icon{
+    margin-left: 20px;
+}
+.left{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.menu_icon div {
+    width: 20px;
+    height: 2px;
+    background-color: white;
+    margin: 4px
+}
+#menu-text{
+    color: white;
+    display: none;
+}
+#logo{
+    margin-left: 20px;
+    width: 60px;
+}
+#search{
+    width: 100%;
+    display: none;
+    padding: 1px;
+    padding-left: 0px;
+    border-radius: 5px;
+    margin-left: 10px;
+    color: black;
+    background-color: white;
+}
+#all{
+    font-weight: 700;
+    padding: 10px;
+    border: 1px solid black;
+}
+#search_bar{
+    padding: 8px;
+    min-width: 300px;
+    border: none;
+}
+.right{
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+.right a{
+    color: white;
+    text-decoration: none;
+    display: inline;
+    font-weight: 700;
+}
+.px1024{
+    display: none;
+}
+#mag_glass{
+    padding: 10px;
+}
+#sign_in{
+    min-width: 70px;
+    padding: 10px;
+}
+
+
+                                                            /* nav done */
+
+
