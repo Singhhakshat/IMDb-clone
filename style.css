@@ -16,11 +16,29 @@
     }
 }
 @media only screen and (min-width:1024px){
+    #two{
+        display: inline !important;
+        position: absolute;
+        right: 10px;
+    }
+    .container{
+        margin-left: 11vw;
+        margin-right: 11vw;
+    }
+    .a{
+        background-color: black !important;
+    }
     .px1024{
         display: inline !important;
         min-width: 200px;
         padding: 10px;
         padding-left: 20px;
+    }
+    .get-app{
+        display: none;
+    }
+    #link-app{
+        display: inline !important;
     }
     nav{
         padding-left: 10vw;
@@ -41,6 +59,10 @@
         order: 2;
         font-weight: 700;
     }
+    .links{
+    margin-left: 15vw;
+    margin-right: 15vw;
+    }
 }
 
                                                     /* Styline nav bar */
@@ -54,6 +76,9 @@ nav{
 }
 .menu_icon{
     margin-left: 20px;
+}
+.menu_icon:hover{
+    cursor: pointer;
 }
 .left{
     width: 100%;
@@ -69,6 +94,9 @@ nav{
 #menu-text{
     color: white;
     display: none;
+}
+.menu_text:hover{
+    cursor: pointer;
 }
 #logo{
     margin-left: 20px;
@@ -91,7 +119,7 @@ nav{
 }
 #search_bar{
     padding: 8px;
-    min-width: 300px;
+    min-width: 85%;
     border: none;
 }
 .right{
@@ -120,3 +148,127 @@ nav{
                                                             /* nav done */
 
 
+body{
+    background-color: black;
+    height: 1vh;
+}
+
+                                                            /* SideNav */
+
+.sidenav{
+        height: 100%; 
+        width: 0; 
+        background-color: rgb(31 31 31);
+        position: fixed; 
+        z-index: 1;
+        top: 0; 
+        left: 0;
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+.empty{
+    height: 60px;
+    margin: 10px;
+}
+.sidenav a{
+    color: whitesmoke;
+    display: block;
+    font-weight: 500;
+    padding: 15px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.sidenav a:hover {
+    text-decoration: underline;
+  }
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+                                                                    /* w */
+.container{
+    padding: 0;
+}
+
+.w{
+    position: relative;
+}
+.w{
+    color: gold;
+    padding: 20px;
+    font-size: 1.4em;
+    font-weight: 900;
+}
+.a{
+    height: 20vh;
+    background-color: rgb(31 31 31);
+}
+#two{
+    display: block;
+    color: lightskyblue;
+    font-size: 0.6em;
+}
+
+                                                            /* Footer */
+.get-app{
+    background-color: rgb(31 31 31);
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+.get-app a{
+    color: black;
+    text-decoration: none;
+    background-color: gold;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+    font-weight: 700;
+}
+.social{
+    text-align: center;
+}
+.social img{
+    width: 20px;
+    margin: 20px;
+}
+
+#link-app{
+    display: none;
+}
+.links{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+.links a{
+    padding: 10px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+.amzn-logo{
+    text-align: center;
+    padding: 10px;
+    color: whitesmoke;
+    font-size: 1.2em;
+
+}
+.amzn-logo img{
+    width: 70px;
+    position: relative;
+    top: 10px;
+}
+.cr{
+    color: grey;
+    font-size: 12px;
+    padding: 10px;
+    text-align: center;
+}
